@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+   <htel lang="en">
+   <head>
+       <meta charset**UTF-8*>
+       <meta http-equiv-*X-UA-Compatible* content**IEredge*>
+       <meta name="viewport" content="width-device-width, initial-scale-1.0">       <!--Estructura del codigo necesairia para que el navegador la interprete-->
+      <title>Cuenta</title>
+      <script src="Proyecto.js"></script>                                         <!--Enlazar el archivo donde se encuentra el codigo javascript con las funcionalidades-->
+      <link rel="stylesheet" href="estilos2.css">                                   <!--Enlazar el archivo css donde se encuentra los estilos-->
+
+   </head>
+
+   <body>
+       <h1>Bienvenido</h1> <br><br>                                                             <!--Etiqueta para insertar un titulo-->
+       <label for="">Saldo en Quetzales: </label>                                               <!--Se crea esta etiqueta donde se le asigna una clase para luego modificarla con el css donde se pone el nombre de la caja-->
+            <input class="controls" type="submit" name="Cantidad1" id="C1" value="10000"> <br>  <!--Se crea un input para crear la caja donde va a ir la informacion y se le agrega el tipu submit para no poder modificarla por el usuario-->
+       <label for="">Saldo en Dolares: </label>                                                 <!--Se crea esta etiqueta donde se le asigna una clase para luego modificarla con el css donde se pone el nombre de la caja-->
+            <input class="controls" type="submit" name="Cantidad2" id="C2" value="1500">        <!--Se crea un input para crear la caja donde va a ir la informacion y se le agrega el tipu submit para no poder modificarla por el usuario-->
+       <hr>                                                                                     <!--Es una etiqueta para insertar una linea -->
+       
+ <form action="" class="cuenta">                                                                                    <!--Se crea un formulario donde se creara los botones de opciones-->
+      <h2>Cantidad a retirar</h2>                                                                                   <!--Etiqueta para insertar un titulo-->
+            <input class="controls" type="number" name="" id="Cant" placeholder="Cantidad">                         <!--Se crea un input donde el usuario ingresara la cantidad y solo permitira la entrada de numeros gracias al tipo number-->
+         <hr>                                                                                                       <!--Etiqueta para insertar una linea que atraviese la pagina-->
+         <h2>Opciones</h2>                                                                                          <!--Etiqueta para insertar un titulo-->
+            <input class="buttons" type="button" value="Retirar cantidad en Quetzales" id="bt2" onclick="formula()"><!--Se crea un input para crear un botton que permitira al usuario realizar una funcion por medio del onclic que realiza la operacion que se declara en la formula-->
+            <input class="buttons" type="button" value="Retirar cantidad en Dolares" id="bt3" onclick="formula2()"> <!--Se crea un input para crear un botton que permitira al usuario realizar una funcion por medio del onclic que realiza la operacion que se declara en la formula-->
+            <input class="buttons" type="button" value="Consultar saldo" id="bt4" onclick="formula3()">             <!--Se crea un input para crear un botton que permitira al usuario realizar una funcion por medio del onclic que realiza la operacion que se declara en la formula-->
+            <input class="buttons" type="button" value="Cambiar pin" id="bt5" onclick="formula4()"><br>             <!--Se crea un input para crear un botton que permitira al usuario realizar una funcion por medio del onclic que realiza la operacion que se declara en la formula-->
+            <input class="buttons" type="button" value="Salir" id="bt6" onclick="formula5()">                       <!--Se crea un input para crear un botton que permitira al usuario realizar una funcion por medio del onclic que realiza la operacion que se declara en la formula-->
+         <div class="imagen"><img src="Logo umg.png" alt=""></div>                                                  <!--Insertar una imagen-->
+         
+</form>                                                                                                             <!--Se cierra la etiqueta del formulario-->
+
+       
+
+   </body>
+   </html>

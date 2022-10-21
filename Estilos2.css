@@ -1,0 +1,75 @@
+* { 
+    border-radius: 30px;
+}
+
+.imagen{
+    padding-left: 1210px;
+    margin-top: -72px;    
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-image: url("./Fondo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px ;
+    min-height: 10 0%;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.form-cuenta{
+    width: 400px;
+    height: 400px;
+    background: white;
+    margin: auto;
+    margin-top: 5px;
+    box-shadow: 7px 13px 37px #0000ff;
+    padding: 30px 20px;
+    border-top: 1px solid #00b7ff;
+    color:white;
+
+}
+
+ h1{
+    color: white;
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+     font-size: 60px;
+}
+.form-cuenta h2{
+    color: white;
+    margin: 0;
+    text-align: left;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 10px;
+}
+
+.buttons{
+    width: 20%;
+    height: 40px;
+    background: rgb(0, 195, 255);
+    border: none;
+    border-radius: 10px;
+    color:white;
+    margin-bottom: 16px;
+    
+}
+.controls{
+    width: 20%;
+    border: 3px solid rgb(0, 195, 255);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background:skyblue;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    }
+
+ 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">                                    <!--Estructura del codigo necesaria para que el navegador la interprete-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+
+    <link rel="stylesheet" href="estilos.css">                                               <!--Enlazar con el archivo css que contien los estilos-->
+    
+    
+</head>
+
+    
+<body>
+    <div class="imagen"><img src="Logo umg.png" alt=""></div>                                 <!--Insertar una imagen-->
+    
+    <form action="" class="form-login">                                                       <!--Formulario para crear los cuadros de texto-->
+        <h1>Acceso</h1>                                                                       <!--Para colocar titulo-->
+        <label for="">Numero de tarjeta</label>                                               <!--Para colocar el nombre de la caja de texto-->
+        <input class="controls" type="number" name="u" id="" placeholder="00000000000">       <!--Para insertar una caja de texto-->
+         <label for="">Pin</label>                                                            <!--Para colocar el nombre de la caja de texto-->
+        <input class="controls"  type="password" name="p" id="Pin" placeholder="0000">        <!--Para insertar una caja de texto-->
+        <input class="buttons"  type="button" value="Ingresar " onclick=" Login(this.form)">  <!--Para crear un boton para ingresar-->
+       <p> <a href="#">¿Olvidaste tu Pin?</a></p>                                             <!--Para crear un pequeño texto que simulara un espacio donde se puede recuperar contraseña-->
+    
+</form>                                                <!--Se cierra la etiqueta del formulario-->
+
+    <script>                                          //se abre la etiqueta script que permitira escribir codigo javascript
+        
+        function Login(form){                         //Crear la funcion con la que  se crearan las funcionalidades del acceso
+            
+            
+            if (form.u.value.length> 10 && form.u.value.length <12 ) {                   //Se crea una condicion que si el formulario por el nombre del input  tiene la cantidad de 11 caracteres
+                if (form.p.value=="2022") {           //si se cumple se crea otra condicion que si en el formulario el input con nombre P es igual a 2022 continue
+                    location="Principalcajero.html";  //si se cumple la condicion se redirige al archivo Principalcajero.html
+                } else {
+                    alert("Pin incorrecto");          //si no se cumple manda un alert con el mensaje pin incorrecto
+                }
+            } else {
+               alert("Numero de tarjeta invalido");   // si no se cumple manda un alert con el mensaje Numero de tarjeta invalido
+            }
+        }
+    </script>                                         <!--se cierra la etiqueta script-->
+</body>
+
+</html>
+                    
